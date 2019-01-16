@@ -1,0 +1,26 @@
+<html>
+  <head>
+  </head>
+  <body>
+  <table> 
+     <tr>
+      <th>Id</th>
+      <th>EmployeeName</th> 
+      <th>Designation</th>
+      <th>Experience</th>
+     </tr>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.employeeName}}</td>
+        <td>{{employee.designation}}</td>
+        <td>{{employee.experience}}</td>
+      </tr>
+      
+   </table>
+
+  <!-- <label>Enter search Id</label>
+  <input type="text" [(ngModel)]="id"  />
+  <button (click)='Filter(id)'>Submit</button> 
+  </body>
+  </html>  
+   -->
