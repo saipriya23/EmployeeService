@@ -8,6 +8,7 @@ import { EmployeesComponent } from './employees/employees.component';
 import { RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {
         path:'Employees',
@@ -33,6 +35,11 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
           path:'Register',
           component:RegisterComponent
         },
+        {
+          path:'EmployeeDetails',
+          component:EmployeeDetailsComponent
+        },
+
     ])
   ],
   providers: [],
